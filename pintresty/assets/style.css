@@ -1,0 +1,152 @@
+*{
+  font-family: cursive;
+  }
+  section{
+  background-color: #edded5;
+  }
+  footer{
+  background-color: #f2a59a;
+  }
+  p{
+  text-align: justify;
+  }
+  .card{
+  background-color: transparent !important;
+  border: none;
+  }
+  .card-body{
+  background-color:  #f4dbc5 !important;
+  }
+  .title{
+  text-align: center;
+  font-size: 35px;
+  }
+  /* ====Hero Section========= */
+  .img_slider{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  }
+  /* Positioning and styling the text overlay */
+  .carousel-text {
+  position: absolute;  /* Make the text overlay absolute */
+  top: 50%;            /* Vertically center the text */
+  left: 80%;           /* Horizontally center the text */
+  transform: translate(-50%, -50%); /* Adjust positioning to be centered */
+  color: white;        /* Text color */
+  text-align: center;  /* Center the text horizontally */
+  }
+  /* ========================ABOUT================= */
+  .abt_img{
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  }
+  @media (max-width: 768px) {
+  .about img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  }
+  }
+  /* =================================CARDS============================================== */
+  /* .crd_bg{
+  background-color: #f5dbc6;
+  height: 350px;
+  width: 80%;
+  position: relative;
+  z-index: -1;
+  } */
+  .crd_img{
+  height: 235px;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: transparent !important;
+  }
+  .crd_title{
+  text-align: center;
+  }
+  .crd_info{
+  text-align: justify;
+  }
+  /* =============================EXTRA TIPS=============================== */
+  .tips img{
+  /* height: 400px; */
+  /* width: 100%; */
+  object-fit: cover;
+  }
+  .tips ul{
+  padding: 0;
+  margin: 0;
+  }
+  .tips ul li{
+  list-style: none;
+  }
+  .tips ul li i{
+  color: #dc5348;
+  }
+  /* ===========================GALLERY============================= */
+  .glr img{
+  height: 250px;
+  width: 250px;
+  }
+  /* ====================== WHAT WE ARE ============================== */
+  .abt_two img {
+  display: flex;
+  align-items: center;
+  }
+  .abt_two .card-body {
+  background-color: #f2a59a !important; 
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  }
+  .abt_two .card-title{
+  text-align: right;
+  font-size: 25px;
+  }
+  /* ======================================PORTFOLIO====================================== */
+  /* Set image size */
+  .portfolio img {
+  height: 250px;
+  width: 100%; /* Make the image take full width of the column */
+  object-fit: cover; /* Ensures image aspect ratio is preserved */
+  }
+  /* Custom margins for specific images */
+  .pic1 {
+  margin-top: -345px;
+  }
+  .pic2 {
+  margin-top: -364px;
+  }
+  .pic5 {
+  margin-top: -257px;
+  }
+  .pic4 {
+  margin-top: -135px;
+  }
+  /* Media Queries for responsive layout */
+  /* For all screen sizes, ensure images are stacked vertically and take full width */
+  @media (max-width: 1200px) { /* For large screens, keeping as vertical stack */
+  .col-md-4 {
+  flex: 0 0 100%; /* Make each column take up full width, creating a vertical stack */
+  }
+  .portfolio img {
+  width: 100%;  /* Ensure images are full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  }
+  }
+  /* For small screens (up to 768px) */
+  @media (max-width: 768px) {
+  .col-md-4 {
+  flex: 0 0 100%; /* Stack images vertically */
+  }
+  .portfolio img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  }
+  /* Reset or adjust margins for specific images */
+  .pic1, .pic2, .pic3, .pic4, .pic5 {
+  margin-top: 0; /* Reset margin for smaller screens */
+  }
+  }
